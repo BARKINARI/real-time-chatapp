@@ -1,8 +1,7 @@
-using System.ComponentModel.DataAnnotations;
-
 namespace ChatAppServer.Api.Dtos;
 
-public record TokenResponseDto(
-    [Required] string AccessToken,
-    [Required] string RefreshToken
-);
+public class TokenResponseDto
+{
+    public required string AccessToken { get; set; }
+    public required string RefreshToken { get; set; }
+}
