@@ -1,8 +1,7 @@
-using System.ComponentModel.DataAnnotations;
-
 namespace ChatAppServer.Api.Dtos;
 
-public record RefreshTokenRequestDto(
-    Guid UserId,
-    [Required] string RefreshToken
-);
+public class RefreshTokenRequestDto
+{
+    public Guid UserId { get; set; }
+    public required string RefreshToken { get; set; }
+}
